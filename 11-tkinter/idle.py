@@ -4,7 +4,7 @@ canvas= tkinter.Canvas(width=800,height=600)
 canvas.pack()
 
 #pismeno S
-canvas.create_arc(50,50,100,100, start= 0, extent= 270,style="arc",width= 2,outline='cyan')
+canvas.create_arc(50,50,100,100, start= 0, extent= x+d*13,style="arc",width= 2,outline='cyan')
 canvas.create_arc(100,100,50,150, start= 90, extent= -270,style="arc",width= 2,outline='cyan')
 
 #pismeno A
@@ -29,14 +29,14 @@ canvas.create_line(350,100,395,100,width=6,fill='pink')
 canvas.create_line(415,50,415,150,460,150,width=7,fill='yellow')
 
 #pismeno S + mekcen
-canvas.create_arc(50,200,100,250, start= 0, extent= 270,style="arc",width=8,outline='magenta')
-canvas.create_arc(100,250,50,300, start= 90, extent= -270,style="arc",width=8,outline='magenta')
-canvas.create_line(55,170,75,190,95,170,width=8,fill='magenta')
+canvas.create_arc(50,200,100,y+d*12, start= 0, extent= 270,style="arc",width=8,outline='magenta')
+canvas.create_arc(100,y+d*12,50,300, start= 90, extent= -270,style="arc",width=8,outline='magenta')
+canvas.create_line(55,y+d*8,75,190,95,y+d*8,width=8,fill='magenta')
 
 #pismeno K
 canvas.create_line(120,200,120,300,width=9,fill='turquoise')
-canvas.create_line(120,250,165,200,width=9,fill='turquoise')
-canvas.create_line(120,250,165,300,width=9,fill='turquoise')
+canvas.create_line(120,y+d*12,165,200,width=9,fill='turquoise')
+canvas.create_line(120,y+d*12,165,300,width=9,fill='turquoise')
 
 #pismeno U
 canvas.create_arc(185,300,235,260, start= 0,extent= -180,style="arc",width=10,outline='orange')
@@ -50,6 +50,6 @@ canvas.create_line(280,200,280,300,width=11,fill='purple')
 #pismeno A
 canvas.create_line(320,300,350,200,width=15,fill='khaki')
 canvas.create_line(350,200,380,300,width=15,fill='khaki')
-canvas.create_line(335,250,365,250,width=15,fill='khaki')
+canvas.create_line(335,y+d*12,365,y+d*12,width=15,fill='khaki')
 
 canvas.mainloop()
