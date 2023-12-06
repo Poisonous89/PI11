@@ -2,13 +2,17 @@ import tkinter
 import random
 canvas = tkinter.Canvas(width=1000,height=700)
 canvas.pack()
-
-
-x = 2
-y = 2
-d = 4
-for g in range(467//d):
-    for j in range(998//d):
+d = 9
+z = d*35
+c = d*8
+width = 998//z
+height = 698//c
+x = 5
+y = 5
+# d = 4
+xx = x
+for g in range(height):
+    for j in range(width):
         color = f'#{random.randrange(256 ** 3):06x}'
         #pismeno S
         canvas.create_rectangle(x+d,y,x+2*d,y+d,fill=color)
@@ -41,7 +45,7 @@ for g in range(467//d):
         canvas.create_rectangle(x+10*d,y+5*d,x+11*d,y+6*d,fill=color)
         canvas.create_rectangle(x+10*d,y+4*d,x+11*d,y+5*d,fill=color)
         canvas.create_rectangle(x+10*d,y+3*d,x+11*d,y+4*d,fill=color)
-        canvas.create_rectangle(x+10*d,y+2*d,x+11*d,x+3*d,fill=color)
+        canvas.create_rectangle(x+10*d,y+2*d,x+11*d,y+3*d,fill=color)
         canvas.create_rectangle(x+10*d,y+d,x+11*d,y+2*d,fill=color)
         canvas.create_rectangle(x+9*d,y+3*d,x+10*d,y+4*d,fill=color)
         canvas.create_rectangle(x+d*8,y+d*3,x+d*9,y+d*4,fill=color)
@@ -120,4 +124,5 @@ for g in range(467//d):
         canvas.update()
         x = x+d*36
     y = y+d*8
+    x = xx
 canvas.mainloop()
