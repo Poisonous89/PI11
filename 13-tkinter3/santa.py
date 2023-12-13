@@ -23,4 +23,4 @@ while True:
             santa_y = x
             santa = canvas.create_image(santa_x, santa_y, image=image_santa)
 
-canvas.mainloop()
+# canvas.mainloop()
