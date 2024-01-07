@@ -1,6 +1,6 @@
-mb = 30
-pb = int(input('Zadaj pocet bodov:'))
-percenta = pb/mb*100
+pp = int(input("Zadaj plny pocet bodov:"))
+pb = int(input('Zadaj tvoj pocet bodov:'))
+percenta = pb/pp*100
 # if percenta >= 90:
 #     print('Vyborny')
 # else:
